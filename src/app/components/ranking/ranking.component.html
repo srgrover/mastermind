@@ -1,0 +1,33 @@
+<section class="d-flex justify-content-center container my-5">
+    <article>   
+        <h1 class="text-center title">Ranking</h1>
+        <p>Para poder participar en el ranking necesitas estar registrado en <strong>MASTERMIND</strong> e iniciar sesión.</p>
+        <table class="table table-hover">
+            <thead>
+                <th>#</th>
+                <th>Username</th>
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Dificultad</th>
+                <th>Tiempo</th>
+                <th>N. Movim</th>
+                <th>Puntos</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of ranking; let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>{{c.username}}</td>
+                    <td>{{c.nombreJugador}}</td>
+                    <td>{{c.fecha}}</td>
+                    <td>{{c.dificultad}}</td>
+                    <td>{{c.tiempo}} s</td>
+                    <td>{{c.numMovimientos}}</td>
+                    <td>{{c.puntuacion}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="text-center mt-5">
+            <a class="ff-anton font-weight-light" [routerLink]="['/home']">Volver</a>
+        </h4>
+    </article>
+</section>

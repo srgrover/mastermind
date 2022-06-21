@@ -1,0 +1,20 @@
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+
+    &:hover{
+        color: red;
+    }
+}
+
+.title{
+    font-family: 'Staatliches', cursive !important;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.ff-anton{
+    font-family: 'Anton', sans-serif;
+}
+

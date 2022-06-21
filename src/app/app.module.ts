@@ -11,10 +11,14 @@ import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 
 //PASO 3: Importamos la configuracion de Firebase
 import { environment } from "src/environments/environment";
+import { HomeComponent } from './components/home/home.component';
+import { RankingComponent } from './components/ranking/ranking.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    RankingComponent
   ],
   imports: [
     BrowserModule,
