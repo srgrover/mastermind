@@ -1,0 +1,20 @@
+<h2 mat-dialog-title>¿Cómo quieres jugar?</h2>
+<mat-dialog-content class="mat-typography">
+  <h4>1. Selecciona el nivel de dificultad</h4>
+  <mat-button-toggle-group color="accent" #dificultadValue="matButtonToggleGroup" (change)="onToggleChange($event)">
+    <mat-button-toggle value="1" aria-label="Normal">
+      Normal
+    </mat-button-toggle>
+    <mat-button-toggle value="2" aria-label="Dificil">
+      Difícil
+    </mat-button-toggle>
+    <mat-button-toggle value="3" aria-label="Increible">
+      Increíble
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Atrás</button>
+  <button mat-button [mat-dialog-close]="true" color="accent" cdkFocusInitial [routerLink]="['/tablero']">Comenzar!</button>
+</mat-dialog-actions>
