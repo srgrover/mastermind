@@ -1,0 +1,76 @@
+@import '../..//shared/scss/colors.scss';
+@import '../..//shared/scss/mixin.scss';
+
+.tablero-juego {
+    background: $background-tablero;
+    height: 85vh;
+    width: 100%;
+    border-radius: 1rem;
+    border: 8px solid #E6E6FA;
+
+    .row-pin {
+        width: 10rem;
+
+        .avatar {
+            height: 4rem;
+            width: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #DC143C;
+            color: #E6E6FA;
+            font-weight: bold;
+            border: 3px solid #E6E6FA;
+            font-size: 2.5em;
+        }
+
+        .box-plenos {
+            height: 3.5rem;
+            width: 3.5rem;
+            background: grey;
+            border-radius: .5rem;
+            border: 2px solid #E6E6FA;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            place-content: space-between;
+        }
+
+        .box-bolas {
+            height: 15rem;
+            width: 4rem;
+            background: grey;
+            border-radius: .8rem;
+            border: 2px solid #E6E6FA;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            place-content: space-between;
+        }
+
+        .color-pin {
+            @include color-pin;
+        }
+    }
+
+    .bolas-seleccionables {
+        width: 25rem;
+        height: 4rem;
+        background: grey;
+        border-radius: .5rem;
+        border: 2px solid #E6E6FA;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        place-content: space-between;
+        padding: 0em 1em 0em 1em;
+
+        .color-pin {
+            @include color-pin;       
+        }
+    }
+}

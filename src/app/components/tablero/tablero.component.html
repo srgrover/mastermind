@@ -1,0 +1,56 @@
+<section class="container m-auto">
+    <h4 class="text-center">Pleno: Bien colocado | Parcial: Solo color | Dificultad: {{dificultadString}}</h4>
+
+    <article class="tablero-juego">
+        <div class="d-flex justify-content-center">
+                <div class="row-pin d-flex flex-column justify-content-center align-items-center my-3" style="width: 6em ;"
+                    *ngFor="let row of [].constructor(rowsByDificultad)">
+                    <div class="p-2">
+                        <div class="avatar">?</div>
+                    </div>
+
+                    <div class="p-2 box-plenos my-3">
+                        <input type="radio" name="" id="" disabled />
+                        <input type="radio" name="" id="" disabled />
+                        <input type="radio" name="" id="" disabled />
+                        <input type="radio" name="" id="" disabled />
+                    </div>
+
+                    <div class="p-2 box-bolas">
+                        <div class="color-pin"></div>
+                        <div class="color-pin"></div>
+                        <div class="color-pin"></div>
+                        <div class="color-pin"></div>
+                    </div>
+                </div>
+            <div class="row-pin d-flex flex-column justify-content-center align-items-center my-3 border">
+                <div class="p-2">
+                    <div class="avatar">?</div>
+                </div>
+
+                <div class="p-2 box-plenos my-3">
+                    <input type="radio" name="" id="" disabled />
+                    <input type="radio" name="" id="" disabled />
+                    <input type="radio" name="" id="" disabled />
+                    <input type="radio" name="" id="" disabled />
+                </div>
+
+                <div class="p-2 box-bolas">
+                    <div class="color-pin"></div>
+                    <div class="color-pin"></div>
+                    <div class="color-pin"></div>
+                    <div class="color-pin"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bolas-seleccionables m-auto">
+            <div class="color-pin"></div>
+            <div class="color-pin"></div>
+            <div class="color-pin"></div>
+            <div class="color-pin"></div>
+            <div class="color-pin"></div>
+            <div class="color-pin"></div>
+        </div>
+    </article>
+</section>
