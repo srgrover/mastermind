@@ -1,3 +1,4 @@
+import { TableroComponent } from './components/tablero/tablero.component';
 import { RankingComponent } from './components/ranking/ranking.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   { 
     path: 'ranking', component: RankingComponent 
+  },
+  { 
+    path: 'tablero', component: TableroComponent 
   },
 ];
 

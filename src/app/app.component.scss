@@ -1,3 +1,10 @@
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Staatliches&display=swap');
+
+// COLORS
+@import 'shared/scss/colors.scss';
+
+html, body{
+    background: $background-general;
+}
