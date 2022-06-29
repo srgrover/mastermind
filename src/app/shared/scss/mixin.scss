@@ -1,0 +1,8 @@
+@mixin color-pin{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: 3px solid #E6E6FA;
+    background: rgb(66, 62, 59);
+    box-shadow: rgba(0, 0, 0, 0.67) 0px -5px 15px 0px inset, rgba(0, 0, 0, 0.01) 0px -26px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0) 0px 2px 1px, rgba(0, 0, 0, 0) 0px 4px 2px, rgba(0, 0, 0, 0) 0px 8px 4px, rgba(0, 0, 0, 0) 0px 16px 8px, rgba(0, 0, 0, 0) 0px 32px 16px;
+}
