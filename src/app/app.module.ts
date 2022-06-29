@@ -13,19 +13,39 @@ import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 import { environment } from "src/environments/environment";
 import { HomeComponent } from './components/home/home.component';
 import { RankingComponent } from './components/ranking/ranking.component';
+import { TableroComponent } from './components/tablero/tablero.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Componentes Angular Material
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+
+// Componentes Propios
+import { GameOptionsDialogComponent } from './components/game-options-dialog/game-options-dialog.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    RankingComponent
+    RankingComponent,
+    TableroComponent,
+    GameOptionsDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // Firebase
     AngularFireModule.initializeApp(environment.firebaseConfig),  //PASO 4: Agregamos la importacion y hacemos referencia al apartado firebaseConfig en environment
     AngularFireAuthModule,                                        //
-    AngularFirestoreModule                                        //
+    AngularFirestoreModule,                                       //
+    // Angular Material
+    MatDialogModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 <section class="d-flex justify-content-center container my-5">
     <article>   
         <h1 class="text-center title">Ranking</h1>
-        <p>Para poder participar en el ranking necesitas estar registrado en <strong>MASTERMIND</strong> e iniciar sesión.</p>
+        <p class="text-white">Para poder participar en el ranking necesitas estar registrado en <strong>MASTERMIND</strong> e iniciar sesión.</p>
         <table class="table table-hover">
             <thead>
                 <th>#</th>
@@ -18,7 +18,7 @@
                     <td>{{i + 1}}</td>
                     <td>{{c.username}}</td>
                     <td>{{c.nombreJugador}}</td>
-                    <td>{{c.fecha}}</td>
+                    <td>{{c.fecha.toDate() | date:'longDate'}}</td>
                     <td>{{c.dificultad}}</td>
                     <td>{{c.tiempo}} s</td>
                     <td>{{c.numMovimientos}}</td>
