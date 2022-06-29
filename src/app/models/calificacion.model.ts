@@ -1,3 +1,5 @@
+import { Timestamp } from "firebase/firestore";
+
 export class Calificacion {
     //Ponemos las propiedades como en nuestra store database de firebase incluido el ID del documento
     id: string;
@@ -5,8 +7,10 @@ export class Calificacion {
     nombreJugador: string;
     emailJugador: string;
     puntuacion: number;
+    horaStart: Date;
+    horaFin: Date;
     tiempo: number;
-    fecha: Date;
+    fecha: Timestamp;
     dificultad: number;
     numMovimientos: number;
 }
